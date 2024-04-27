@@ -1,0 +1,13 @@
+ version: "3.3"
+
+ services:
+   api-students:
+     build: ./api-students
+     image: sebastianromero07/api-students
+     ports:
+       - 8000:8000
+   websimple:
+     build: ./websimple
+     image: sebastianromero07/websimple
+     ports:
+      - 8080:80
